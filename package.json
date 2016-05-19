@@ -19,8 +19,11 @@
   ],
   "dependencies": {
     "glob": "^5.0.14",
-    "lodash": "^3.10.1",
+    "json-schema-deref": "^0.3.2",
+    "lodash": "^4.11.2",
+    "mkdirp": "^0.5.1",
     "request": "^2.61.0",
+    "yargs": "^4.6.0",
     "z-schema": "^3.16.1"
   },
   "devDependencies": {},
@@ -34,6 +37,7 @@
   },
   "scripts": {
     "pretest": "npm install -g mocha && npm install",
-    "test": "mocha"
+    "test": "mocha",
+    "gen-recipe": "node --harmony scripts/gen_recipe.js"
   }
 }

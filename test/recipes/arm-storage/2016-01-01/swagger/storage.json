@@ -1,0 +1,195 @@
+[
+  {
+    "operationId": "StorageAccounts_CheckNameAvailability",
+    "parameters": {
+      "api-version": "2016-12-31",
+      "subscriptionId": "1234"
+    },
+    "assertions": [
+      "response.status == 200"
+    ],
+    "outputMapping": {
+      "response.body.id": "id",
+      "response.body.name": "name"
+    },
+    "inputMapping": {
+      "name": "request.path.name",
+      "id": "request.header.x-ms-somekey"
+    }
+  },
+  {
+    "operationId": "StorageAccounts_Create",
+    "parameters": {
+      "resourceGroupName": "string",
+      "accountName": "string",
+      "api-version": "2016-12-31",
+      "subscriptionId": "1234"
+    },
+    "assertions": [
+      "response.status == 200 || response.status == 202"
+    ],
+    "outputMapping": {
+      "response.body.id": "id",
+      "response.body.name": "name"
+    },
+    "inputMapping": {
+      "name": "request.path.name",
+      "id": "request.header.x-ms-somekey"
+    }
+  },
+  {
+    "operationId": "StorageAccounts_Delete",
+    "parameters": {
+      "resourceGroupName": "string",
+      "accountName": "string",
+      "api-version": "2016-12-31",
+      "subscriptionId": "1234"
+    },
+    "assertions": [
+      "response.status == 200 || response.status == 204"
+    ],
+    "outputMapping": {
+      "response.body.id": "id",
+      "response.body.name": "name"
+    },
+    "inputMapping": {
+      "name": "request.path.name",
+      "id": "request.header.x-ms-somekey"
+    }
+  },
+  {
+    "operationId": "StorageAccounts_GetProperties",
+    "parameters": {
+      "resourceGroupName": "string",
+      "accountName": "string",
+      "api-version": "2016-12-31",
+      "subscriptionId": "1234"
+    },
+    "assertions": [
+      "response.status == 200"
+    ],
+    "outputMapping": {
+      "response.body.id": "id",
+      "response.body.name": "name"
+    },
+    "inputMapping": {
+      "name": "request.path.name",
+      "id": "request.header.x-ms-somekey"
+    }
+  },
+  {
+    "operationId": "StorageAccounts_Update",
+    "parameters": {
+      "resourceGroupName": "string",
+      "accountName": "string",
+      "api-version": "2016-12-31",
+      "subscriptionId": "1234"
+    },
+    "assertions": [
+      "response.status == 200"
+    ],
+    "outputMapping": {
+      "response.body.id": "id",
+      "response.body.name": "name"
+    },
+    "inputMapping": {
+      "name": "request.path.name",
+      "id": "request.header.x-ms-somekey"
+    }
+  },
+  {
+    "operationId": "StorageAccounts_List",
+    "parameters": {
+      "api-version": "2016-12-31",
+      "subscriptionId": "1234"
+    },
+    "assertions": [
+      "response.status == 200"
+    ],
+    "outputMapping": {
+      "response.body.id": "id",
+      "response.body.name": "name"
+    },
+    "inputMapping": {
+      "name": "request.path.name",
+      "id": "request.header.x-ms-somekey"
+    }
+  },
+  {
+    "operationId": "StorageAccounts_ListByResourceGroup",
+    "parameters": {
+      "resourceGroupName": "string",
+      "api-version": "2016-12-31",
+      "subscriptionId": "1234"
+    },
+    "assertions": [
+      "response.status == 200"
+    ],
+    "outputMapping": {
+      "response.body.id": "id",
+      "response.body.name": "name"
+    },
+    "inputMapping": {
+      "name": "request.path.name",
+      "id": "request.header.x-ms-somekey"
+    }
+  },
+  {
+    "operationId": "StorageAccounts_ListKeys",
+    "parameters": {
+      "resourceGroupName": "string",
+      "accountName": "string",
+      "api-version": "2016-12-31",
+      "subscriptionId": "1234"
+    },
+    "assertions": [
+      "response.status == 200"
+    ],
+    "outputMapping": {
+      "response.body.id": "id",
+      "response.body.name": "name"
+    },
+    "inputMapping": {
+      "name": "request.path.name",
+      "id": "request.header.x-ms-somekey"
+    }
+  },
+  {
+    "operationId": "StorageAccounts_RegenerateKey",
+    "parameters": {
+      "resourceGroupName": "string",
+      "accountName": "string",
+      "api-version": "2016-12-31",
+      "subscriptionId": "1234"
+    },
+    "assertions": [
+      "response.status == 200"
+    ],
+    "outputMapping": {
+      "response.body.id": "id",
+      "response.body.name": "name"
+    },
+    "inputMapping": {
+      "name": "request.path.name",
+      "id": "request.header.x-ms-somekey"
+    }
+  },
+  {
+    "operationId": "Usage_List",
+    "parameters": {
+      "api-version": "2016-12-31",
+      "subscriptionId": "1234"
+    },
+    "assertions": [
+      "response.status == 200"
+    ],
+    "outputMapping": {
+      "response.body.id": "id",
+      "response.body.name": "name"
+    },
+    "inputMapping": {
+      "name": "request.path.name",
+      "id": "request.header.x-ms-somekey"
+    }
+  }
+]
